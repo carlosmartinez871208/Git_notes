@@ -148,3 +148,14 @@ git branch -a: nos permite ver todos los branches: locales y remotos. Se para ve
             Changes to be committed:
             modified:   notes.md
         Nos pide que hagamos commit para el merge: git commit -m "merge related message"
+
+## TAGS: Son una referencia a un commit en especifico.
+    Para crear un tag, se pueden usar nombres o versiones semanticas.
+    git tag <tag_name>, por ejemplo:
+        git tag Guide_V1
+    git tag -d <tag_name>: nos sirve para borrar un tag.
+    git tag -a v1.0.0 -m "Version 1.0.0 de la guia"
+        vX            .X                         .X
+        Version mayor: Se agrego algo importante: Bug fix. 
+    gti tag -a v0.1.0 <commit_id> -m "Version alfa de la app": Se agrega el tag en un commit en especifico.
+    git show <tag_name>: Para mostrar todo con respecto del tag.

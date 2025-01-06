@@ -106,3 +106,8 @@ agregar el archivo .gitignore en .git folder.
     merge fast-forward:No hay ningun cambio y pueden ser integradas en la rama de donde se derivo.
     merge manual: Se da cuando git no puede resolverlo por el mismo.
 
+# Para crear una rama.
+git branch <branch_name>: Crea el branch.
+git checkout <branch_name>: se mueve al branch.
+git checkout -b <branch_name>: Crea un branch nuevo y se mueve a ese branch.
+

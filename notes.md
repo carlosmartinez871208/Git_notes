@@ -121,3 +121,29 @@ Una vez que una rama ha cumplido su proposito el objetivo es borrarla, para evit
 git branch -a: nos permite ver todos los branches: locales y remotos. Se usar para verificar cuantos branches se tienen activos.
 
 # Automatic merge: Git por si mismo se encarga de unir los cambios para evitar errores.
+
+# Merge con conflitos: 
+    Se usa el mismo comando: git merge <branch_to_be_merged_into_current_branch>
+    Sin embargo GIT nos manda el siguiente mensaje:
+        Auto-merging notes.md
+        CONFLICT (content): Merge conflict in notes.md
+        Automatic merge failed; fix conflicts and then commit the result.
+    Esto significa que tenemos que resolver los conflictos manualmente.
+    Podemos usar el siguiente comando:
+        git mergetool: para abrir un programa de resolucion de conflictos, ahi resolvemos manualmente y cerramos cuando todo este igual.
+        Si todo esta bien nos depsliega el siguiente mensaje:
+            Merging:
+            notes.md
+
+            Normal merge conflict for 'notes.md':
+            {local}: modified file
+            {remote}: modified file
+        
+        Usamos git status para ver el status de nuestro repositorio.
+            On branch main
+            All conflicts fixed but you are still merging.
+            (use "git commit" to conclude merge)
+
+            Changes to be committed:
+            modified:   notes.md
+        Nos pide que hagamos commit para el merge: git commit -m "merge related message"

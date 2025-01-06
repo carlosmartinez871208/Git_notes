@@ -114,4 +114,7 @@ git checkout -b <branch_name>: Crea un branch nuevo y se mueve a ese branch.
 # Para hacer un merge desde mi branch_name a mi master o main (branch): 
     git checkout main: para moverme al branch main
     git merge <branch_to_be_merge_into_current_branch>: Esto hace un merge en la rama actual de lo que hay en otra rama.
-    
+
+Una vez que una rama ha cumplido su proposito el objetivo es borrarla, para evitar conflictos.
+    git branch -d <branch_name>: borrar una rama.
+

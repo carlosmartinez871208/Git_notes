@@ -118,9 +118,10 @@ git checkout -b <branch_name>: Crea un branch nuevo y se mueve a ese branch.
 Una vez que una rama ha cumplido su proposito el objetivo es borrarla, para evitar conflictos.
     git branch -d <branch_name>: borrar una rama.
 
-git branch -a: nos permite ver todos los branches: locales y remotos. Se usar para verificar cuantos branches se tienen activos.
+git branch -a: nos permite ver todos los branches: locales y remotos. Se para verificar que el commit no exista.
 
 # Automatic merge: Git por si mismo se encarga de unir los cambios para evitar errores.
+    Solo nos pide el mensaje del commit.
 
 # Merge con conflitos: 
     Se usa el mismo comando: git merge <branch_to_be_merged_into_current_branch>

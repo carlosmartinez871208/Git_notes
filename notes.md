@@ -119,3 +119,5 @@ Una vez que una rama ha cumplido su proposito el objetivo es borrarla, para evit
     git branch -d <branch_name>: borrar una rama.
 
 git branch -a: nos permite ver todos los branches: locales y remotos. Se usar para verificar cuantos branches se tienen activos.
+
+# Automatic merge: Git por si mismo se encarga de unir los cambios para evitar errores.

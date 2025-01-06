@@ -120,4 +120,5 @@ Una vez que una rama ha cumplido su proposito el objetivo es borrarla, para evit
 
 git branch -a: nos permite ver todos los branches: locales y remotos. Se para verificar que el commit no exista.
 
-# Automatic merge: Git por si mismo se encarga de unir los cambios para evitar errores.
+# Automatic merge: Git por si mismo se encarga de unir los cambios para evitar errores de manera recursiva.
+    Solo nos pide el mensaje del commit.

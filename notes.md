@@ -118,5 +118,4 @@ git checkout -b <branch_name>: Crea un branch nuevo y se mueve a ese branch.
 Una vez que una rama ha cumplido su proposito el objetivo es borrarla, para evitar conflictos.
     git branch -d <branch_name>: borrar una rama.
 
-git branch -a: nos permite ver todos los branches: locales y remotos. Se para verificar que el commit no exista.
-
+git branch -a: nos permite ver todos los branches: locales y remotos. Se usar para verificar cuantos branches se tienen activos.

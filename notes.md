@@ -159,3 +159,15 @@ git branch -a: nos permite ver todos los branches: locales y remotos. Se para ve
         Version mayor: Se agrego algo importante: Bug fix. 
     gti tag -a v0.1.0 <commit_id> -m "Version alfa de la app": Se agrega el tag en un commit en especifico.
     git show <tag_name>: Para mostrar todo con respecto del tag.
+
+Stash
+Nos sirve para deshacer cambios pero no perderlos, es usado cuando se requiere un cambio de emergencia y nos ayuda a no perder los cambios que tenemos actualmente.
+git stash: Nos genera un stash con los cambios que tenemos actualmente.
+git stash list: Nos genera una lista con los stash.
+git stash pop: Recupera la informacion que tenemos en el stash mas reciente.
+git stash clear: borra todo el stash o todos los stash.
+git stash apply stash@{stash_deseado}: Nos permite jalar el stash deseado.
+git stash drop stash@{stash_deseado}: Nos permiter borrar un stash deseado.
+git stash show stash@{stash_deseado}: Nos permite ver un poco mas informacion del stash.
+git stage save "Nombre del stage": Nos permite nombrar un stash y asi es mas facil localizarlo.
+git stage list --stat: Para ver mas informacion del stash

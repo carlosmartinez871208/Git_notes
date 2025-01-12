@@ -198,6 +198,14 @@ git push -u origin main:
 
 Para subir tags.
 git push --tags: para subir todos los tags.
+git push: para subir los datos de manera normal.
+
 
 Configuracion para que al hacer pull o fetch y merge, no nos salga el warning.
 git config --global pull.ff only
+git config --global pull.rebase true
+
+Para ver los origenes de fetch y de pull
+git remote -v
+
+git clone git@github.com:carlosmartinez871208/Git_notes.git

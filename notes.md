@@ -180,3 +180,11 @@ Rebase: Para actualizacion de rama.
         Separar commits.
 git rebase branch_name: se actualiza  nuestro branch con respecto el branch_name. i.e.g. git rebase main
     git rebase main: Nos permite actualizar nuestro branch actual con el branch main.
+git rebase -i HEAD~2:
+    Para cambiar el nombre solo cambiamos pick a reword.
+    pick b76d157 b se cambia por: r b76d157 b
+    pick a931ac7 c se cambia por: r a931ac7 c
+    Despues nos sale un editor parecido al ejemplo del squash para cambiar el mensaje.
+
+git checkout -- file_name, nos regresar el archivo seleccionado a la forma que tiene en el ultimo commit.
+git checkout -- .: Nos regresa todo el repositorio a como estaba en el ultimo commit.

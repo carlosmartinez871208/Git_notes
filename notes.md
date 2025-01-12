@@ -172,9 +172,11 @@ git stash show stash@{stash_deseado}: Nos permite ver un poco mas informacion de
 git stage save "Nombre del stage": Nos permite nombrar un stash y asi es mas facil localizarlo.
 git stage list --stat: Para ver mas informacion del stash.
 
-Rebase: 
+Rebase: Para actualizacion de rama.
     git rebase -i HEAd~numero_de_commits.
         Nos permite ordenar commits.
         Nos permite corregir mensajes de los commits.
         Unir commits.
         Separar commits.
+git rebase branch_name: se actualiza  nuestro branch con respecto el branch_name. i.e.g. git rebase main
+    git rebase main: Nos permite actualizar nuestro branch actual con el branch main.

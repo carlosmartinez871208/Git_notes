@@ -212,3 +212,69 @@ git clone git@github.com:carlosmartinez871208/Git_notes.git
 git fetch: Hace una descargar del repositorio para actualizarlo sin hacer un merge del stage al repositorio local.
 
 git pull: es el equivalente de git fetch + git merge.
+
+# Commit Message Format
+
+Each commit message consists of a header, a body and a footer. The header has a special format that includes a type, a scope and a subject:
+<type>(<scope>): <subject>
+<BLANK LINE>
+<body>
+<BLANK LINE>
+<footer>
+
+The header is mandatory and the scope of the header is optional.
+
+Any line of the commit message cannot be longer 100 characters! This allows the message to be easier to read on GitHub as well as in various git tools.
+
+The footer should contain a closing reference to an issue if any.
+Header
+
+The message header is a single line that contains succinct description of the change containing a type, an optional scope and a subject.
+Type
+
+Must be one of the following:
+
+    build: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+    ci: Changes to CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+    docs: Documentation only changes
+    feat: A new feature
+    fix: A bug fix
+    perf: A code change that improves performance
+    refactor: A code change that neither fixes a bug nor adds a feature
+    style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+    test: Adding missing tests or correcting existing tests
+
+Scope
+
+Scope is used to describe the scope of influence of commit. For example api, model, compile, etc…
+
+You can use * if there isn’t a more fitting scope.
+Subject
+
+The subject contains a succinct description of the change:
+
+    use the imperative, present tense: “change” not “changed” nor “changes”
+    don’t capitalize the first letter
+    no dot (.) at the end
+
+Body
+
+Just as in the subject, use the imperative, present tense: “change” not “changed” nor “changes”. The body should include the motivation for the change and contrast this with previous behavior.
+Footer
+
+The footer should contain any information about Breaking Changes and is also the place to reference issues that this commit Closes.
+Breaking Changes
+
+All breaking changes have to be mentioned as a breaking change block in the footer, which should start with the word BREAKING CHANGE: with a space or two newlines. The rest of the commit message is then the description of the change, justification and migration notes.
+
+Example: 
+
+feat($browser): onUrlChange event (popstate/hashchange/polling)
+
+Added new event to $browser:
+
+    forward popstate event if available
+    forward hashchange event if popstate not available
+    do polling when neither popstate nor hashchange available
+
+Breaks $browser.onHashChange, which was removed (use onUrlChange instead)

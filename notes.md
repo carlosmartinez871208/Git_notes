@@ -195,3 +195,9 @@ GITHUB
 git remote add origin git@github.com:carlosmartinez871208/Git_notes.git: Este comando nos permite anadir el repositorio en git a un proyecto en igt hub
 git branch -M main
 git push -u origin main: 
+
+Para subir tags.
+git push --tags: para subir todos los tags.
+
+Configuracion para que al hacer pull o fetch y merge, no nos salga el warning.
+git config --global pull.ff only

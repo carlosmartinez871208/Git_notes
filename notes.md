@@ -170,4 +170,11 @@ git stash apply stash@{stash_deseado}: Nos permite jalar el stash deseado.
 git stash drop stash@{stash_deseado}: Nos permiter borrar un stash deseado.
 git stash show stash@{stash_deseado}: Nos permite ver un poco mas informacion del stash.
 git stage save "Nombre del stage": Nos permite nombrar un stash y asi es mas facil localizarlo.
-git stage list --stat: Para ver mas informacion del stash
+git stage list --stat: Para ver mas informacion del stash.
+
+Rebase: 
+    git rebase -i HEAd~numero_de_commits.
+        Nos permite ordenar commits.
+        Nos permite corregir mensajes de los commits.
+        Unir commits.
+        Separar commits.

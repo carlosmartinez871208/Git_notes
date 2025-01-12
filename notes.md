@@ -207,7 +207,7 @@ git config --global pull.rebase true
 Para ver los origenes de fetch y de pull
 git remote -v
 
-git clone git@github.com:carlosmartinez871208/Git_notes.git
+git clone git@github.com:carlosmartinez871208/Git_notes.git: Clona el repositorio en nuestro equipo.
 
 git fetch: Hace una descargar del repositorio para actualizarlo sin hacer un merge del stage al repositorio local.
 

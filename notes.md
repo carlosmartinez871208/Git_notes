@@ -188,3 +188,10 @@ git rebase -i HEAD~2:
 
 git checkout -- file_name, nos regresar el archivo seleccionado a la forma que tiene en el ultimo commit.
 git checkout -- .: Nos regresa todo el repositorio a como estaba en el ultimo commit.
+
+#############################################################################################################################################################
+GITHUB
+
+git remote add origin git@github.com:carlosmartinez871208/Git_notes.git: Este comando nos permite anadir el repositorio en git a un proyecto en igt hub
+git branch -M main
+git push -u origin main: 
